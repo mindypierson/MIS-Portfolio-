@@ -11,7 +11,7 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 
 ## 📂 Featured Projects
 
-### [Hotel Database](SQL/Hotel_Database)
+### [Hotel Database](SQL/SQL/Hotel_Database)
 - Designed relational schema for hotel guests, rooms, and bookings
 - Includes ER diagram and sample queries
 
