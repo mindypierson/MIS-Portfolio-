@@ -11,7 +11,7 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 
 ## 📂 Featured Projects
 
-### [Hotel Database](SQL/SQL/Hotel_Database)
+### [Hotel Database](SQL/Hotel_Database)
 - Designed relational schema for hotel guests, rooms, and bookings
 - Includes ER diagram and sample queries
 
@@ -22,7 +22,7 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 ### [Reservation Extra Services](SQL/Reservation_ExtraServices)
 - Procedure to safely add optional services to reservations with error handling
 
-### [Excel Project 1 — Data Analysis](Excel/Excel/Project_1)
+### [Excel Project 1 — Data Analysis](Excel/Project_1)
 - Analyzed data set. Reporting with pivots/charts
 
 ### [Excel Project 2 — Business Data Analysis](Excel/Project_2)
