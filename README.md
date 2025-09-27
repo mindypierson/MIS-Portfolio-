@@ -23,7 +23,7 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 - Procedure to safely add optional services to reservations with error handling
 
 ### [Excel Project 1 — Data Analysis](Excel/Excel/Project_1)
-- Analyzed top movies: pivot tables, slicers, and visual dashboards
+- Analyzed data set. Reporting with pivots/charts
 
 ### [Excel Project 2 — Business Data Analysis](Excel/Project_2)
 - Cleaned raw business data and created dynamic dashboard with PivotTables, slicers, and conditional formatting
