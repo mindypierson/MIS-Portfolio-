@@ -25,6 +25,9 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 ### [Excel Movie Success Analysis](Excel/Movie_Analysis)
 - Analyzed top movies: pivot tables, slicers, and visual dashboards
 
+### [Excel Project 2 — Business Data Analysis](Excel/Project_2)
+- Cleaned raw business data and created dynamic dashboard with PivotTables, slicers, and conditional formatting
+
 ## How to Use
 Each project folder includes a README with instructions and sample queries or screenshots.
 
