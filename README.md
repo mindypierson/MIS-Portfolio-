@@ -22,7 +22,7 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 ### [Reservation Extra Services](SQL/Reservation_ExtraServices)
 - Procedure to safely add optional services to reservations with error handling
 
-### [Excel Movie Success Analysis](Excel/Movie_Analysis)
+### [Excel Project 1 — Data Analysis](Excel/Excel/Project_1)
 - Analyzed top movies: pivot tables, slicers, and visual dashboards
 
 ### [Excel Project 2 — Business Data Analysis](Excel/Project_2)
