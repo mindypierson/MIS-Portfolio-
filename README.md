@@ -25,7 +25,7 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 ### [Excel Movie Success Analysis](Excel/Movie_Analysis)
 - Analyzed top movies: pivot tables, slicers, and visual dashboards
 
-## 🚀 How to Use
+## How to Use
 Each project folder includes a README with instructions and sample queries or screenshots.
 
 ---
