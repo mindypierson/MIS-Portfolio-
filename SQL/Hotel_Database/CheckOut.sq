@@ -1,0 +1,33 @@
+IF OBJECT_ID('dbo.CheckOut','P') IS NOT NULL DROP PROCEDURE dbo.CheckOut;
+GO
+CREATE PROCEDURE dbo.CheckOut
+  @ReservationID INT,
+  @TaxRatePct    DECIMAL(5,2) = 10.00
+AS
+BEGIN
+  SET NOCOUNT ON;
+
+  DECLARE @CheckIn DATE, @CheckOut DATE, @NightlyRate DECIMAL(10,2);
+  SELECT @CheckIn = CheckInDate, @CheckOut = CheckOutDate, @NightlyRate = NightlyRate
+  FROM dbo.Reservations WHERE ReservationID = @ReservationID;
+
+  IF @CheckIn IS NULL BEGIN RAISERROR('Reservation not found.',16,1); RETURN; END
+  IF EXISTS(SELECT 1 FROM dbo.Reservations WHERE ReservationID=@ReservationID AND Status='checked_out')
+    BEGIN RAISERROR('Already checked out.',16,1); RETURN; END
+
+  DECLARE @Nights INT = DATEDIFF(DAY, @CheckIn, @CheckOut);
+  DECLARE @RoomSubtotal DECIMAL(12,2) = @Nights * @NightlyRate;
+  DECLARE @SvcSubtotal DECIMAL(12,2) =
+    ISNULL((SELECT SUM(Price) FROM dbo.Reservation_ExtraServices WHERE ReservationID=@ReservationID),0);
+
+  DECLARE @Subtotal DECIMAL(12,2) = @RoomSubtotal + @SvcSubtotal;
+  DECLARE @TaxAmount DECIMAL(12,2) = (@Subtotal * (@TaxRatePct/100.0));
+
+  UPDATE dbo.Reservations
+    SET Subtotal = @Subtotal, TaxAmount = @TaxAmount, Status='checked_out'
+  WHERE ReservationID = @ReservationID;
+
+  INSERT INTO dbo.Payments(ReservationID, PayType, Amount)
+  VALUES(@ReservationID, 'capture', @Subtotal + @TaxAmount);
+END
+GO
