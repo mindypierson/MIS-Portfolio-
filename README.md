@@ -1,42 +1,37 @@
 # MIS & Data Analytics Portfolio
 
-Hi! I’m Mindy Pierson, a Management Information Systems student at Washington State University.  
-This repository showcases selected coursework and personal projects in **SQL, Excel, and Data Visualization**.
+Hi! I’m **Mindy Pierson**, an MIS student at Washington State University.  
+This repo showcases selected projects in **SQL, Excel, and data analytics**.
 
-## Skills
-- SQL: database design, stored procedures, data modeling (ERD/3NF)
-- Excel: pivot tables, dashboards, data cleaning & analysis
-- Data Visualization: Tableau & Power BI (in progress)
-- Other Tools: Python basics, Git/GitHub
+## 🛠 Skills
+- SQL (DDL/DML, stored procedures, constraints, indexing)
+- Data modeling (ERD/3NF), reporting views & KPIs
+- Excel (PivotTables, slicers, dashboards, SUMIFS/XLOOKUP)
+- Tools: SSMS, Git/GitHub, Tableau/Power BI (in progress)
 
-## Featured Projects
+## 📂 Featured Projects
 
-### [Hotel Database](SQL/Hotel_Database)
-- Designed relational schema for hotel guests, rooms, and bookings
-- Includes ER diagram and sample queries
+### [Hotel Management System](SQL/Hotel_Database)
+- Availability-safe booking (`CreateReservation` prevents overlap)
+- Extras & charges (`AddReservationService`)
+- Checkout & billing (`CheckOut` computes totals + tax, posts payment)
+- Reporting views (occupancy & daily revenue)
 
-### [Sales Summary](SQL/Sales_Summary)
-- Stored procedure to aggregate sales line items into summary totals
-- Demonstrates data validation and MERGE upsert logic
+### [E-commerce Core (Shopify-style)](SQL/Ecommerce_Core)
+- Customers, products, orders, order items, payments, fulfillments
+- Inventory transactions + helper views (daily sales, on-hand)
 
-### [Reservation Extra Services](SQL/Reservation_ExtraServices)
-- Procedure to safely add optional services to reservations with error handling
+### [E-commerce: Process Refund](SQL/Ecommerce_ProcessRefund)
+- Stored procedure validates item & quantity, posts refund payment, restores inventory, updates order status
 
-### [Ecommerce Core (Shopify-style)](SQL/Ecommerce_Core)
-- Customers, products, orders, payments, fulfillments, and inventory transactions
-- Views for daily sales and inventory on hand
-
-### [Ecommerce Process Refund](SQL/Ecommerce_ProcessRefund)
-- Stored procedure to validate and process line-item refunds (inventory + payment)
-
-### [Excel Project 1 — Data Analysis](Excel/Project_1)
-- Analyzed data set. Reporting with pivots/charts
+### [Sales Summary Procedure](SQL/Sales_Summary)
+- Aggregates sales transactions into summary totals with tax & validation
 
 ### [Excel Project 2 — Business Data Analysis](Excel/Project_2)
-- Cleaned raw business data and created dynamic dashboard with PivotTables, slicers, and conditional formatting
+- Cleaned raw data → PivotTables, slicers, and KPI dashboard
 
-## How to Use
-Each project folder includes a README with instructions and sample queries or screenshots.
+### [Excel Project 1 — Data Analysis](Excel/Project_1)
+- Summary tables & charts with SUMIFS/XLOOKUP and conditional formatting
 
 ---
 
