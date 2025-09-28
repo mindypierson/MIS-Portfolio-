@@ -22,6 +22,13 @@ This repository showcases selected coursework and personal projects in **SQL, Ex
 ### [Reservation Extra Services](SQL/Reservation_ExtraServices)
 - Procedure to safely add optional services to reservations with error handling
 
+### [Ecommerce Core (Shopify-style)](SQL/Ecommerce_Core)
+- Customers, products, orders, payments, fulfillments, and inventory transactions
+- Views for daily sales and inventory on hand
+
+### [Ecommerce Process Refund](SQL/Ecommerce_ProcessRefund)
+- Stored procedure to validate and process line-item refunds (inventory + payment)
+
 ### [Excel Project 1 — Data Analysis](Excel/Project_1)
 - Analyzed data set. Reporting with pivots/charts
 
