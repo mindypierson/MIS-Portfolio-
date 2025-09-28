@@ -12,7 +12,3 @@ Stored procedure to process a line-item refund:
 3. Execute:
    ```sql
    EXEC dbo.ProcessRefund @OrderID = 1, @OrderItemID = 2, @RefundQty = 1, @Reason = 'customer_return';
-
-SELECT * FROM dbo.Payments WHERE OrderID = 1 ORDER BY PaymentID DESC;
-SELECT * FROM dbo.InventoryTransactions WHERE RelatedOrderID = 1 ORDER BY InventoryTxnID DESC;
-SELECT OrderID, OrderStatus FROM dbo.Orders WHERE OrderID = 1;
