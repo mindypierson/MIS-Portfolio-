@@ -3,13 +3,13 @@
 Hi! I’m Mindy Pierson, a Management Information Systems student at Washington State University.  
 This repository showcases selected coursework and personal projects in **SQL, Excel, and Data Visualization**.
 
-## 🛠️ Skills
+## Skills
 - SQL: database design, stored procedures, data modeling (ERD/3NF)
 - Excel: pivot tables, dashboards, data cleaning & analysis
 - Data Visualization: Tableau & Power BI (in progress)
 - Other Tools: Python basics, Git/GitHub
 
-## 📂 Featured Projects
+## Featured Projects
 
 ### [Hotel Database](SQL/Hotel_Database)
 - Designed relational schema for hotel guests, rooms, and bookings
